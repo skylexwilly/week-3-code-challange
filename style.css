@@ -1,0 +1,47 @@
+
+Copy code
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.movies {
+  flex: 1;
+}
+
+.details {
+  flex: 1;
+}
+
+ul#films {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul#films li {
+  cursor: pointer;
+  padding: 10px;
+}
+
+ul#films li:hover {
+  background-color: #f0f0f0;
+}
+
+.movie-poster {
+  max-width: 100%;
+}
+
+.buy-ticket-btn {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.buy-ticket-btn:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+}
