@@ -1,47 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
 
-Copy code
-.container {
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
   display: flex;
   justify-content: space-around;
-  margin: 20px;
+  padding: 2rem;
 }
 
-.movies {
-  flex: 1;
+#movie-details {
+  width: 45%;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.details {
-  flex: 1;
+#movie-details img {
+  max-width: 100%;
 }
 
-ul#films {
+#movie-list {
+  width: 45%;
+}
+
+#films {
   list-style-type: none;
   padding: 0;
 }
 
-ul#films li {
+.film-item {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background-color: #f5f5f5;
+  border-radius: 4px;
   cursor: pointer;
-  padding: 10px;
 }
 
-ul#films li:hover {
-  background-color: #f0f0f0;
+.film-item:hover {
+  background-color: #e0e0e0;
 }
 
-.movie-poster {
-  max-width: 100%;
+.sold-out {
+  color: #fff;
+  background-color: #ff6347; /* Tomato */
 }
 
-.buy-ticket-btn {
-  margin-top: 10px;
-  padding: 5px 10px;
-  background-color: #007bff;
+button {
+  padding: 0.5rem 1rem;
+  background-color: #333;
   color: white;
   border: none;
   cursor: pointer;
+  border-radius: 4px;
 }
 
-.buy-ticket-btn:disabled {
-  background-color: lightgray;
+button:disabled {
+  background-color: #ccc;
   cursor: not-allowed;
 }
+
